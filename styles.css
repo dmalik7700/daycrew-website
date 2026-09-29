@@ -118,6 +118,12 @@ input:focus,textarea:focus,select:focus{outline:3px solid rgba(13,102,93,.13);bo
 .upload-title small{font-weight:500;color:var(--muted)}
 .upload-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
 .form-small{font-size:11px;color:var(--muted);text-align:center;margin:10px 0 0}
+.form-status{margin-top:16px;padding:18px 20px;border-radius:16px;display:flex;flex-direction:column;gap:4px;font-size:14px}
+.form-status strong{font-size:16px}
+.form-status span{color:var(--muted)}
+.form-status-success{background:#edf8f4;border:1px solid #b9dfd3;color:#174f46}
+.form-status-error{background:#fff2f0;border:1px solid #efc2bc;color:#7b2d24}
+.form-status-error a{font-weight:800}
 .faq-list{max-width:860px;margin:0 auto;border-top:1px solid var(--line)}
 details{border-bottom:1px solid var(--line);padding:18px 2px}
 summary{cursor:pointer;font-weight:800;list-style:none}
