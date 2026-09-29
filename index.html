@@ -14,6 +14,7 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
+  <script src="https://js.usebasin.com/v2.11.1.min.js" defer></script>
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -170,13 +171,7 @@
           </div>
         </div>
 
-        <form id="quote-form" class="quote-form" action="https://formsubmit.co/info@daycrew.co.uk" method="POST" enctype="multipart/form-data">
-          <input type="hidden" name="_subject" value="New DayCrew quote request" />
-          <input type="hidden" name="_next" value="https://daycrew.co.uk/thanks.html" />
-          <input type="hidden" name="_template" value="table" />
-          <input type="hidden" name="_url" value="https://daycrew.co.uk/" />
-          <input class="honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off" />
-
+        <form id="quote-form" class="quote-form" action="https://usebasin.com/f/9fa16389e212" method="POST" enctype="multipart/form-data" data-basin-form data-basin-success-action="render" data-basin-success-id="quote-success" data-basin-error-id="quote-error" data-basin-spam-protection="none" data-basin-capture-url="true">
           <div class="form-grid">
             <label>Full name<input type="text" name="Full name" required autocomplete="name" /></label>
             <label>Phone number<input type="tel" name="Phone number" required autocomplete="tel" /></label>
@@ -210,7 +205,7 @@
             </div>
 
             <label class="full checkbox-row privacy-check">
-              <input type="checkbox" required />
+              <input type="checkbox" name="Privacy notice acknowledged" value="Yes" required />
               <span>I have read the <a href="privacy.html" target="_blank" rel="noopener">Privacy Notice</a> and understand that my details will be used to respond to this quote request.</span>
             </label>
           </div>
@@ -218,6 +213,14 @@
           <button type="submit" class="btn btn-primary btn-full">Send my quote request</button>
           <p class="form-small">Your booking is confirmed only after DayCrew agrees the scope, price, date and terms with you.</p>
         </form>
+        <div id="quote-success" class="form-status form-status-success" style="display:none;" role="status" aria-live="polite">
+          <strong>Thanks — your quote request has been sent.</strong>
+          <span>We’ll review the details and get back to you as soon as we can.</span>
+        </div>
+        <div id="quote-error" class="form-status form-status-error" style="display:none;" role="alert" aria-live="assertive">
+          <strong>Something went wrong.</strong>
+          <span>Please try again, or email <a href="mailto:info@daycrew.co.uk">info@daycrew.co.uk</a>.</span>
+        </div>
       </div>
     </section>
 
