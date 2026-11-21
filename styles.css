@@ -74,6 +74,7 @@ h1 span{color:var(--brand)}
 .scope-box h3{font-size:17px;margin-bottom:6px}
 .scope-box p{margin:0;color:#6b5b46}
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.steps-five{grid-template-columns:repeat(5,1fr)}
 .step{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:25px}
 .step-number{display:block;color:var(--brand);font-weight:900;letter-spacing:.12em;font-size:12px;margin-bottom:30px}
 .step h3{font-size:18px;margin-bottom:10px}
@@ -160,7 +161,7 @@ details p{color:var(--muted);margin:12px 30px 0 0}
 @media(max-width:900px){
   .hero-grid,.pricing-wrap,.quote-grid,.about-grid{grid-template-columns:1fr}
   .hero-grid{gap:38px}.hero-card{max-width:620px;transform:none}
-  .service-grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}
+  .service-grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.steps-five{grid-template-columns:repeat(2,1fr)}
   .quote-copy{max-width:700px}
 }
 
